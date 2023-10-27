@@ -1,0 +1,9 @@
+
+FastSAM/
+SuperGluePretrainedNetwork/
+xtcocoapi/
+sam_checkpoints/
+*.pt
+*.mp4
+*.avi
+*.pkl
