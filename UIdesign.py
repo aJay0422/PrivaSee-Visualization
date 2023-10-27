@@ -155,18 +155,11 @@ while True:
             for sensor_name in sensor_list:
                 if check_inbox(click_x, click_y, sensor_icons_bbox_xyxy[sensor_name]):
                     selected_sensor_name = sensor_name
-                    mode = "visualization"
+                    mode = "property visualization"
                     break
-        elif mode == "visualization":
-            if check_inbox(click_x, click_y, back_button_bbox_xyxy):
-                mode = "selection"
-            if check_inbox(click_x, click_y, sensor_box_xyxy):
-                mode = "property visualization"
         elif mode == "property visualization":
             if check_inbox(click_x, click_y, back_button_bbox_xyxy):
-                mode = "visualization"
-            if check_inbox(click_x, click_y, property_squeeze_box_xyxy):
-                mode = "visualization"
+                mode = "selection"
 
                 
 
