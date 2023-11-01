@@ -67,7 +67,7 @@ def trans_decompose(img):
 
 def overlay_png(frame, img, coord, corner="ul", alpha=1.0):
     """
-    Overlay a pnd image on the frame
+    Overlay a png image on the frame
     :param frame: the frame to be overlayed
     :param img: the png image to be overlayed, with alpha channel
     :param coord: the corner coordinate of the image
